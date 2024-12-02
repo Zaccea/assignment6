@@ -1,9 +1,12 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   background-color: #333;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .container {
@@ -49,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff69b4;
+  background-color: #FF348D;
   border-radius: 10px;
   overflow: hidden;
   height: 200px;
@@ -66,7 +69,7 @@ body {
 /* Navigation Bar */
 .navbar {
   grid-area: navbar;
-  background-color: #ccff00;
+  background-color: #AFED02;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -85,13 +88,13 @@ body {
 
 .navbar a:hover {
   color: white;
-  background-color: #ff69b4;
+  background-color: black;
 }
 
 /* Social Media Panel */
 .social-panel {
   grid-area: social;
-  background-color: #00bfff;
+  background-color: #02AFF3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +106,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  gap: 10px;
+  gap: 20px;
   width: 100%;
   height: 100%;
 }
@@ -114,8 +117,8 @@ body {
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
-  font-size: 0.9em;
-  color: #333;
+  font-size: 0.75em;
+  color: black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
   text-decoration: none;
@@ -130,11 +133,10 @@ body {
 /* Content Panel */
 .content-panel {
   grid-area: content;
-  background-color: #ff69b4;
+  background-color: #FF348D;
   border-radius: 10px;
-  color: white;
-  font-size: 1.5em;
-  font-weight: bold;
+  color: black;
+  font-size: 1em;
   width: 100%;
   align-self: stretch;
   padding: 20px;
@@ -143,10 +145,39 @@ body {
   box-sizing: border-box;
 }
 
+/* Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-gallery a {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* Twitter Feed */
 .twitter-feed {
   grid-area: twitter;
-  background-color: #00bfff;
+  background-color: #02AFF3;
   border-radius: 10px;
   height: 100%;
   overflow-y: scroll;
@@ -162,7 +193,7 @@ body {
 /* Footer */
 .footer {
   grid-area: footer;
-  background-color: #ccff00;
+  background-color: #AFED02;
   display: flex;
   justify-content: center;
   align-items: center;

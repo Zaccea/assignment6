@@ -9,6 +9,11 @@
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/lightbox.css">
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -18,12 +23,12 @@
       </div>
       <!-- Navigation Bar -->
       <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Commission</a>
-        <a href="#">Contact</a>
-        <a href="#">T.O.S.</a>
+        <a href="#" data-target="home">Home</a>
+        <a href="#" data-target="about">About</a>
+        <a href="#" data-target="portfolio">Portfolio</a>
+        <a href="#" data-target="commission">Commission</a>
+        <a href="#" data-target="contact">Contact</a>
+        <a href="#" data-target="tos">T.O.S.</a>
       </nav>
       <!-- Social Media Panel -->
       <div class="social-panel">
@@ -103,7 +108,7 @@
         </div>
       </div>
       <!-- Main Content Panel -->
-      <div class="content-panel">
+      <div class="content-panel" id="content-panel">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
         <p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. </p>
@@ -118,5 +123,7 @@
       <!-- Footer -->
       <footer class="footer">Copyright Footer</footer>
     </div>
+	<script src="JS/main.js"></script>
+	<script src="JS/lightbox-plus-jquery.js"></script>
   </body>
 </html>
